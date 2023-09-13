@@ -15,8 +15,11 @@ export default function Logo({ zoom }: { zoom: number }) {
       zoom,
       dragRotate: true,
       // stop rotation when dragging starts
-      onDragStart: function () {
+      onDragStart: () => {
         isSpinning = false;
+      },
+      onDragEnd: () => {
+        isSpinning = true;
       },
     });
 
