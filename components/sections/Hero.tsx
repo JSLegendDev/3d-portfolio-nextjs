@@ -4,7 +4,7 @@ import Logo from "../3dmodels/Logo";
 
 export function Hero() {
   return (
-    <section className="bg-white dark:bg-gray-900">
+    <section>
       <div className="mx-auto grid max-w-screen-xl px-4 py-24 lg:grid-cols-12 lg:gap-8 lg:py-16 xl:gap-0">
         <div className="place-self-center lg:col-span-7">
           <h1 className="mb-4 max-w-2xl text-4xl font-extrabold leading-none tracking-tight dark:text-white md:text-5xl xl:text-6xl">
@@ -24,7 +24,7 @@ export function Hero() {
             </span>
           </a>
         </div>
-        <div className="flex h-96  lg:col-span-5">
+        <div className="flex h-96 justify-center lg:col-span-5">
           <Logo zoom={3} />
         </div>
       </div>

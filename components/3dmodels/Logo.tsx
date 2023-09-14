@@ -40,14 +40,9 @@ export default function Logo({ zoom }: { zoom: number }) {
       requestAnimationFrame(animate);
     }
     animate();
-  }, []);
+  }, [zoom]);
 
   return (
-    <svg
-      ref={canvasRef}
-      className="block w-full"
-      width={"800"}
-      height={"500"}
-    ></svg>
+    <svg ref={canvasRef} className="block" width={"800"} height={"800"}></svg>
   );
 }
